@@ -1,4 +1,4 @@
-echo "Loaded Sam's Dumb Vimrc, Cyka Blyat"
+echo "Loaded Sam's Dumb Vimrc"
 set number
 set showmatch
 syntax on
