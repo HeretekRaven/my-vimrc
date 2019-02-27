@@ -9,8 +9,12 @@ inoremap  <Esc>:wq<Enter>
 nnoremap  :q!<Enter>
 nnoremap  :w<Enter>
 inoremap  <Esc>:w<Enter>i
+nnoremap  :vsplit
 autocmd FileType java nnoremap  :! javac % <Enter>
-autocmd FileType java nnoremap  :! java %:r <Enter>
+autocmd FileType java nnoremap  :! java %:t:r<Enter>
 autocmd FileType python nnoremap  :! python3 % <Enter>
-autocmd FileType c++ nnoremap  :! g++ % -o %:r <Enter>
-autocmd FileType c++ nnoremap  :! ./%:r <Enter>
+autocmd FileType cpp nnoremap  :! g++ % -o %:r <Enter>
+autocmd FileType cpp nnoremap  :! ./%:r <Enter>
+autocmd FileType c nnoremap  :! gcc % -o %:r <Enter>
+autocmd FileType c nnoremap  :! ./%:r <Enter>
+autocmd FIleType c nnoremap  :! make <Enter>
